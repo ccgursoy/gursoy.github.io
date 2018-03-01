@@ -1,0 +1,123 @@
+[
+{
+  "title": "Les Candidats 2017",
+  "content": "Website about the french political elections in 2017. Includes a personnalized survey to find one's most appropriate candidate based on a personnalized survey.",
+  "link": "https://lescandidats2017.fr",
+  "modal": {
+    "id": "candidates",
+    "title": "Les Candidats 2017",
+    "introduction": "introduction text",
+    "image": "img/projects/candidats2017.png",
+    "content": [
+      "first paragraph",
+      "second paragraph",
+      "last paragraph"
+    ],
+    "date": "First semester of 2017",
+    "tags": [
+      "Politics",
+      "Personalized survey",
+      "JavaScript",
+      "Node & Express",
+      "Bootstrap",
+      "SurveyJS"
+    ]
+  }
+}, {
+  "title": "BimBamJob",
+  "content": "SMS chatbot to simplify registration and CV creation for people uncomfortable with online job seeking. The ChatBot is under deployement for BimBamJob - a social-oriented start-up for which the job has been done voluntarily.",
+  "link": "https://bimbamjob.fr/",
+  "modal": {
+    "id": "bimbamjob",
+    "title": "BimBamJob & Data For Good",
+    "introduction": "introduction text",
+    "image": "img/projects/bimbamjob.png",
+    "content": [
+      "first paragraph",
+      "second paragraph",
+      "last paragraph"
+    ],
+    "date": "Some date",
+    "tags": [
+      "ChatBot",
+      "Social and Solidarity Economy",
+      "Python",
+      "DialogFlow Google Api",
+      "Celery",
+      "Flask"
+    ]
+  }
+}, {
+  "title": "Chrome Extension",
+  "content": "Chrome extension to track time spent on different websites and cluster them according to personnalized type of activities (Work, entertainment, news, ...) - Under development.",
+  "link": "https://chrome.google.com/webstore/category/extensions",
+  "modal": {
+    "id": "chrome",
+    "title": "Chrome Extension",
+    "introduction": "introduction text",
+    "image": "img/projects/extension.jpg",
+    "content": [
+      "first paragraph",
+      "second paragraph",
+      "last paragraph"
+    ],
+    "date": "September 2017",
+    "tags": [
+      "Activity tracking",
+      "Chrome Extension",
+      "JavaScript",
+      "HTML / CSS"
+    ]
+  }
+}, {
+  "title": "Hackathons",
+  "content": "Participation to various hackathons and challenges : Chatbot for personnalized article recommandation at the end of online article reading, vizualisation of Arte Media content, prediction of number of passengers in planes, ...",
+  "link": "",
+  "modal": {
+    "id": "Hackathons",
+    "title": "ok",
+    "introduction": "introduction text",
+    "image": "img/projects/hackathon.jpg",
+    "content": [
+      "AndroidFR",
+      "Arte"
+    ],
+    "date": "Some date",
+    "tags": [
+      "Arte",
+      "AndroidFR",
+      "DataCamp",
+      "Machine learning",
+      "Web Dev",
+      "Web Design"
+    ]
+  }
+}, {
+  "title": "Various ML Projects",
+  "content": "Involvement in different Machine Learning projects either as side projects or during my last educational year, as courses projects or challenges.",
+  "link": "",
+  "modal": {
+    "id": "machinelearning",
+    "title": "ok",
+    "introduction": "introduction text",
+    "image": "img/projects/ml.jpg",
+    "content": [
+      "Speech Recognition : media transcription for friends, in french, english",
+      "Regain : Image recognition",
+      "NLP for Movie reviews",
+      "Citation graph completion in Graph and Text course",
+      "Digit recognition : MNIST in Kernel methods",
+      "Compressed Sensing : Neurosciences and compressed sensing for neuron understanding"
+    ],
+    "date": "Some date",
+    "tags": [
+      "Speech Recognition",
+      "Image Analysis",
+      "Natural Language Processing",
+      "Citation Graph Completion",
+      "Digit Recognition",
+      "Compressed Sensing"
+    ]
+  }
+}
+]

@@ -1,0 +1,86 @@
+<!-- Services -->
+ <section id="map" class="bg-light" style="padding-bottom:0px;">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-12 text-center">
+         <h2 class="section-heading">Where we can or could have meet</h2>
+       </div>
+     </div>
+   </div>
+
+
+   <div id='mapbox'></div>
+
+    <script>
+
+    function createMapPopUp(marker) {
+      var titleDiv = "<div class=\"material-project__heading\"><h4>" + marker.title + "</h4></div>";
+      var locationDiv = "<div class=\"mapboxgl-popup-location\">@ " + marker.location + "   (" + marker.date + ")</div>";
+
+      var descriptionDiv = "<div class=\"mapboxgl-popup-description\">";
+      for(var i = 0; i < marker.description.length; ++i) {
+        descriptionDiv += "<p>" + marker.description[i] + "</p>";
+      }
+      descriptionDiv += "</div>"
+
+      var linksDiv = "<div class=\"mapboxgl-popup-links\">Links : ";
+      var i = 0;
+      for (var key in marker.links) {
+        i += 1;
+        if (marker.links.hasOwnProperty(key)) { // this will check if key is owned by data object and not by any of it's ancestors
+            linksDiv += "<a href=" + marker[key] + ">"+key+"</a>"
+        }
+        if (i != Object.keys(marker.links).length) {
+          linksDiv += " & ";
+        }
+      }
+      linksDiv += "</div>"
+
+      var HTMLPopUp =  titleDiv + locationDiv  + descriptionDiv + linksDiv;
+
+      return HTMLPopUp;
+
+      //return "<h1>Ok</h1>"
+    };
+
+
+
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3ltY2llcyIsImEiOiJjamRjNmxqOTMwZnhsMzNub2dqN2JqZ25vIn0.-Qv70n5LbDOvQ-P7gHEwlA';
+
+    var map = new mapboxgl.Map({
+        container: 'mapbox',
+        style: 'mapbox://styles/symcies/cjdc6sivlalo12rlcv3l5uphv',
+        scrollZoom: false,
+        center: [-22, 46],
+        zoom:2.9,
+        doubleClickZoom:true
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+    {% for marker_ in site.data.map.features %}
+
+      marker = {{marker_ | jsonify}};
+
+      var geojson = document.createElement("div");
+      geojson.className = 'marker';
+
+      var coordinates = [marker.geometry.coordinates[0], marker.geometry.coordinates[1]];
+      var HTMLPopUp = createMapPopUp(marker.properties);
+
+
+      new mapboxgl.Marker(geojson, {'offset':[0, -20]})
+      .setLngLat(coordinates)
+      .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+      .setHTML(HTMLPopUp))
+      .addTo(map);
+
+      {% for key in marker.properties.links %}
+        //console.log("{{key}}");
+      {% endfor %}
+
+    {% endfor %}
+
+    </script>
+
+ </section>

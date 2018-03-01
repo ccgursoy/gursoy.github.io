@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.364163, 48.835437]
+      },
+      "properties": {
+        "title": "Aramis Lab",
+        "location": "Brain and Spine Institute",
+        "date": "2017-2019",
+        "description": [
+          "Daily working place. The Aramis Lab is part of the Brain and Spine Institute. The team focuses on the development of new numerial models of brain diseases."
+        ],
+        "links": {
+          "Aramis": "http://aramislab.fr/",
+          "ICM": "https://icm-institute.org/en/"
+        }
+
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.215879, 46.810050]
+      },
+      "properties": {
+        "title": "MICCAI",
+        "location": "Quebec, Canada",
+        "date": "August 2017",
+        "description": [
+          "Presentation of the poster '' at the Medical Image Computing and Computer Assited Interventions"
+        ],
+        "links": {
+          "MICCAI 2017": "http://www.miccai2017.org/",
+          "Article": "https://arxiv.org/pdf/1709.08491.pdf"
+        }
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.037498, 49.822994]
+      },
+      "properties": {
+        "title": "Lviv Data Science Summer School",
+        "location": "Lviv, Ukraine",
+        "date":"Summer 2017 - Summer 2018",
+        "description": [
+          "Lecturer at the Data Science Summer School. My presentations focused on Machine Learning applications to Healthcare, with theoretical and practical sessions."
+        ],
+        "links": {
+          "Summer 2017": "http://cs.ucu.edu.ua/en/summerschool/summer-school-2017/",
+          "Summer 2018": "http://cs.ucu.edu.ua/en/summerschool/"
+        }
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.190316, 41.389612]
+      },
+      "properties": {
+        "title": "Bayes Comp",
+        "location": "Barcelona, Spain",
+        "date": "March 2018",
+        "description": [
+          "Oral presentation of my current work on neurodegenerative diseases at a conference focusing on Bayesian statistics and MCMC methods application."
+        ],
+        "links": {
+          "Bayes Comp 2018": "https://www.maths.nottingham.ac.uk/personal/tk/bayescomp/"
+        }
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.466035, 51.910144]
+      },
+      "properties": {
+        "title": "Rotterdam Study",
+        "location": "Rotterdam, The Netherlands",
+        "date": "January 2018",
+        "description": [
+          "Application of new numerical methods to study longitudinal evolutions of biomarkers in the case on normal aging. The Rotterdam Study cohort gathered decades of clinical and imaging data of thousands of patients."
+        ],
+        "links": {
+          "Erasmus Medical Center": "https://www.erasmusmc.nl/?lang=en",
+          "Rotterdam Study": "https://en.wikipedia.org/wiki/Rotterdam_Study"
+        }
+      }
+    }
+    ,
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.342616, 44.494887]
+      },
+      "properties": {
+        "title": "SIAM Conference on Imaging Science - Symposium",
+        "location": "Bologna, Italy",
+        "date": "June 2018",
+        "description": [
+          "Presentation at the Mathematical Methods for Spatiotemporal Imaging of the SIAM Conference, entitled 'Learning digital models of Alzheimer’s Disease progression'."
+        ],
+        "links": {
+          "SIAM Imaging Science 2018": "https://www.siam-is18.dm.unibo.it/",
+          "Symposium": "https://www.siam-is18.dm.unibo.it/minisymposia/86"
+        }
+      }
+    }
+  ]
+}
