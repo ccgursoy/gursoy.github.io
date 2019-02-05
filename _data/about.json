@@ -1,0 +1,27 @@
+{
+  "description" : [
+    "I'm a PhD Student in Machine Learning, under the supervision of Stanley Durrleman and Stéphanie Allassonnière.
+    Ecole Polytechnique (CMAP) and Brain and Spine Institute (@ Pitié Salpétrière hospital). My thesis aims at developing Machine Learning tools to investigate neurodegenerative processes and dynamics",
+    "Using my mathematical and coding skills to create impact where it matters.
+    Beyond medical application, I love to develop tools or share my knowledge in many applications to help people achieve their goals, as long as they involve motivating & positive impacts. This includes various projects from a chatbot for a Social-and-Solidarity association to a web-app to choose and analyze the different political parties at the French election through teaching at University or a Data Science Summer School.",
+    "Learning and keeping an open mind to innovative ideas, framework, tools.
+    Because I would like to be as proficient as possible, I try to stay tuned about the innovations and researches that might impact my working areas."
+  ],
+  "skills": [
+    {
+      "title": "Applied Maths",
+      "img": "area-chart",
+      "tags": ["Machine Learning", "Statistical Learning", "Deep Learning", "Riemannian Geometry", "Bayesian Statistics", "EM-like Algorithms", "MCMC methods"]
+    },
+    {
+      "title": "Coding",
+      "img": "code",
+      "tags": ["C++", "Python", "Matlab", "Pytorch", "Linux Environnements", "HTML/CSS", "JavaScript", "NodeJS", "Bootstrap", "Flask", "scikit-learn", "Distributed computing"]
+    },
+    {
+      "title": "Language",
+      "img": "language",
+      "tags": ["French", "Ukrainian", "English", "Russian", "Ancient greek"]
+    }
+  ]
+}

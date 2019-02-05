@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Master Data Science - Ecole Polytechnique",
+    "period": "2015 - 2016",
+    "description": "It focuses on theoretical courses in maths and computer science, various machine-learning projects and hackathons-like sessions. <a href='https://datascience-x-master-paris-saclay.fr/'>Website.</a>",
+    "img": "img/education/m2.png",
+    "tags": ["Advanced Machine Learning", "Convex optimization", "Deep Learning", "Statistical Learning", "Compressed Sensing", "Hackathons"]
+  },
+  {
+    "title": "Master of Science in Engineering - Ecole des Ponts et Chaussées",
+    "period": "2012 - 2016",
+    "description": "Top engineering school (Grande Ecole) with a strong mathematical track",
+    "img": "img/education/ponts.jpg",
+    "tags": ["Probabilities & Statistics", "Analysis", "Operational research", "Scientific computing", "Programming C++", "Design Thinking"]
+  },
+  {
+    "title": "Baschelor of Science in Applied Economics - Dauphine",
+    "period": "2014 - 2015",
+    "description": "While performing my internships, I was willing to use my mathematical backgroung in my future carrer and thus decided to fullfil a B. Sc. in Applied Economics, at University Paris-Dauphine",
+    "img": "img/education/dauphine.png",
+    "tags": ["Macroeconomics", "Microeconomics", "Econometrics"]
+  },
+  {
+    "title": "Civil Engineering Internship - GeorgiaTech",
+    "period": "2013 (5 months)",
+    "description": "Four months internship in a Civil Engineering Laboratory under the supervision of Dr. Frost. Development of a porosity computation software to compare numerical simulations of soil. This led to the publication of a paper Comparison between geometrical and dynamic particle packing <a href='https://books.google.fr/books?hl=fr&lr=&id=K2HLBQAAQBAJ&oi=fnd&pg=PA109&dq=i+koval+frost+numerical+packing&ots=B3ZykBm7LM&sig=sxUWmWfedgPAKUQJxmxeXBeGtdI#v=onepage&q&f=false'>that can be found here,</a> and which was presented at a Symposium in London<p>",
+    "img": "img/education/georgiatech.png",
+    "tags": ["Civil Engineering", "Numerical modeling", "Simulations"]
+  }
+]

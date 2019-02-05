@@ -1,0 +1,92 @@
+---
+layout: default
+permalink: /research/
+---
+
+
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
+        <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <span class="list-group sticky-top sticky-offset">
+            <!-- Separator with title -->
+
+            <a href="#research" class="nav-link side-link js-scroll-trigger">Research</a>
+            <a href="#publications" class="nav-link side-link js-scroll-trigger">Publications</a>
+            <a href="#projects" class="nav-link side-link js-scroll-trigger">Projects</a>
+            <a href="#teaching" class="nav-link side-link js-scroll-trigger">Teaching</a>
+
+        </span>
+        <!-- List Group END-->
+    </div>
+
+    <div class="col py-3">
+      <div clas="container">
+
+        <div class="col-md-10">
+
+
+        <section id="research">
+          <div class="row">
+            <h2>Research</h2>
+            Explore the dynamics of neurodegenerative diseases to learn statistical models that characterize average and individual progressions of the disease.
+          </div>
+        </section>
+
+          <section id="publications">
+            <div class="row">
+              <h2>Publications</h2>
+            </div>
+            <div class="row">
+              <ul>
+              {% for pub in site.data.research.publications %}
+                <li>
+                  <b>{{pub.title}}</b><br>
+                  <i>{{pub.authors}}</i><br>
+                  {{pub.year}} in {{pub.in}} - Link to <a href={{pub.pdf}}>pdf</a><br>
+                  {% for tag in pub.tags %}
+                    <span class="label label-primary material-label material-label_primary main-container__column">{{tag}}</span>
+                  {%endfor%}
+                </li>
+
+              {% endfor %}
+              </ul>
+            </div>
+          </section>
+
+          <section id="projects">
+            <div class="row">
+              <h2>Projects</h2>
+            </div>
+            <div class="row">
+              <ul>
+                <li>Leasp Software</li>
+                <li>Tadpole</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="teaching">
+            <div class="row">
+              <h2>Teaching</h2>
+            </div>
+            <div class="row">
+              <ul>
+                <li>Data Science Summer School</li>
+                <li>Advanced Machine Learning</li>
+                <li>Programmation (C)</li>
+              </ul>
+            </div>
+          </section>
+
+          </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+</script>

@@ -21,50 +21,47 @@ $fa-font-path:        "../font/font-awesome";
 /*  GENERAL RULES  */
 /*******************/
 
+body {
+    padding-top: 106px;
+}
+
+.sticky-offset {
+    top: 136px;
+
+}
+
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
-
-/***********/
-/*  ABOUT  */
-/***********/
-
-
-.material-accordion {
-  width: 100%;
-}
-.material-accordion__collapse {
-  padding: 10px;
-  font-size: 14px;
-}
-.material-accordion .material-accordion__panel {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
-}
-.material-accordion .material-accordion__heading {
-  padding: 0;
-}
-.material-accordion .material-accordion__title {
-  background-color: #3488d1;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  cursor: default;
+.profile {
   display: block;
-  padding: 15px 35px;
-  -webkit-transition: background-color 0.5s ease-out 0s;
-  transition: background-color 0.5s ease-out 0s;
-}
-.material-accordion .material-accordion__title:hover {
-  text-decoration: none;
-}
-.material-accordion .material-accordion__title.collapsed {
-  cursor: pointer;
-  background-color: $theme1;
+  margin: 0 auto;
+
+  padding: 3px;
+  height: auto;
+  width: 50%;
+  border-radius: 50%;
+
 }
 
-.material-accordion .material-accordion__title.collapsed:hover {
-  background-color: $theme1hover;
+.navbar {
+  padding: 30px;
+  background-color: #02456F;
+}
+
+.side-link{
+  font-size: 18px;
+  padding-left: 100px;
+  color: #02456F;
+}
+
+h2 {
+  margin-top:60px;
+}
+
+.fa {
+  font-size:3em;
 }
 
 
@@ -279,11 +276,74 @@ p {
 /*  INTERESTS  */
 /***************/
 
+.interests-row {
+  margin: 16px 0px;
+}
+
+.interests-tag {
+  margin: 4px;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #02456f;
+  color: #FFF
+}
+
 /***************/
 /*  EDUCATION  */
 /***************/
 
+.education-row {
+  margin-bottom: 50px;
 
+}
+
+
+.education-img {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.education-img img{
+  max-height:120px;
+  max-width:130px;
+}
+
+.education-text{
+  border-left-style: solid;
+  border-left-color: #02456f;
+  border-left-width: medium;
+}
+
+.education-title {
+  font-size: 20px;
+
+}
+
+.education-period {
+  font-size: 16px;
+  color: #b4b4b4;
+}
+
+.education-tag {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #02456f;
+  color: #FFF
+}
 
 
 /**********/

@@ -1,0 +1,91 @@
+{
+  "publications": [
+    {
+      "title": "Simulating Alzheimer’s Disease Progression with Personalised Digital Brain Models",
+      "authors": "Koval I., Bône A., Louis M., Bottani S., Marcoux A., Samper-Gonzalez J., Burgos N., Charlier B., Bertrand A., Epelbaum S., Colliot O., Allassonnière S., Durrleman S.",
+      "year": 2018,
+      "in": "Under revision",
+      "pdf": "https://hal.inria.fr/hal-01964821/file/SimulatingAlzheimer_low_resolution%20%281%29.pdf",
+      "tags": [],
+    },
+    {
+      "title": "Design of a Decision Support System for Predicting the Progression of Alzheimer's Disease",
+      "authors": "Ansart M., Koval I., Bertrand A., Dormont S., Durrleman S.",
+      "year": 2018,
+      "in": "ALzheimer's & Dementia",
+      "pdf": "https://www.alzheimersanddementia.com/article/S1552-5260(18)30543-0/abstract",
+      "tags": [],
+    },
+    {
+      "title": "Spatiotemporal Propagation of the Cortical Atrophy: Population and Individual Patterns",
+      "authors": "Koval I., Schiratti J.-B., Routier A., Bacci M., Colliot O., Allassonniere S., Durrleman S.",
+      "year": 2018,
+      "in": "Frontiers in Neurology",
+      "pdf": "https://hal.inria.fr/hal-01910400/document",
+      "tags": [],
+    },
+    {
+      "title": "Statistical Learning of Spatiotemporal Patterns from Longitudinal Manifold-Valued Networks",
+      "authors": "Koval I., Schiratti J.-B., Routier A., Bacci M., Colliot O., Allassonnière S., Durrleman S.",
+      "year": 2017,
+      "in": "MICCAI",
+      "pdf": "https://arxiv.org/pdf/1709.08491.pdf",
+      "tags": ["Spatiotemporal propagation", "Disease progression"]
+    }
+  ],
+  "Projects": [
+    {
+      "id": "project_1",
+      "title": "LeasPy Software",
+      "html": "",
+      "tags": [""],
+      "modal": {
+        "title": "",
+        "text" : ""
+      }
+    },
+    {
+      "id": "project_2",
+      "title": "Tadpole Challenge",
+      "html": "",
+      "tags": [""],
+      "modal": {
+        "title": "",
+        "text" : ""
+      }
+    }
+  ],
+  "Teaching": [
+    {
+      "id": "teaching_1",
+      "title": "Data Science Summer School",
+      "html": "",
+      "tags": ["Machine Learning", "Healthcare", ""],
+      "modal": {
+        "title": "",
+        "text" : "",
+      },
+      "lectures": ["one", "two", "three"]
+    },
+    {
+      "id": "teaching_2",
+      "title": "Advanced Machine Learning",
+      "html": "",
+      "tags": [""],
+      "modal": {
+        "title": "",
+        "text" : ""
+      }
+    },
+    {
+      "id": "teaching_3",
+      "title": "C++ Programming",
+      "html": "",
+      "tags": [""],
+      "modal": {
+        "title": "",
+        "text" : ""
+      }
+    }
+  ]
+}
