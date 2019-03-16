@@ -20,7 +20,11 @@ $fa-font-path:        "../font/font-awesome";
 /*******************/
 /*  GENERAL RULES  */
 /*******************/
-
+@media screen and (max-width: 760px) {
+  html {
+    overflow-x: hidden;
+  }
+}
 
 body {
     padding-top: 106px;
@@ -398,13 +402,3 @@ h2 {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-
-@media screen and (max-width: 760px) {
-  html {
-    overflow-x: hidden;
-  }
-
-  .navbar {
-    background-color: #de167b;
-  }
-}
