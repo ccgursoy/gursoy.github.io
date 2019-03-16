@@ -5,88 +5,165 @@ permalink: /research/
 
 
 <div class="row" id="body-row">
-    <!-- Sidebar -->
-    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
-        <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
-        <!-- Bootstrap List Group -->
-        <span class="list-group sticky-top sticky-offset">
-            <!-- Separator with title -->
 
-            <a href="#research" class="nav-link side-link js-scroll-trigger">Research</a>
-            <a href="#publications" class="nav-link side-link js-scroll-trigger">Publications</a>
-            <a href="#projects" class="nav-link side-link js-scroll-trigger">Projects</a>
-            <a href="#teaching" class="nav-link side-link js-scroll-trigger">Teaching</a>
+<!-- Sidebar -->
+<div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
+    <span class="list-group sticky-top sticky-offset">
+        <a href="#publications" class="nav-link side-link js-scroll-trigger">➤   Publications</a>
+        <a href="#teaching" class="nav-link side-link js-scroll-trigger">➤   Teaching</a>
+        <a href="#map" class="nav-link side-link js-scroll-trigger">➤   Map</a>
 
-        </span>
-        <!-- List Group END-->
+        <hr style="width:60%; background:#02456F;">
+        {% include sticky_side.html %}
+
+    </span>
+</div>
+<!-- Sidebar END-->
+
+<div class="col py-3">
+  <div class="container">
+
+
+    <!-- RESEARCH SECTION -->
+    <div class="container" style="text-align:center; margin-bottom:40px;">
+      <div class="row" id="about">
+        <div class="col-md-10">
+        <h2 class="page-title">Research & Scientific Interests</h2>
+        <h3 class="page-subtitle text-muted">A few words about my research.</h3>
+        <hr style="width:40%; background:#02456F;">
+        </div>
+      </div>
+      <!--
+      <div class="row" style="margin-top:30px;">
+        <div class="col-md-8 offset-md-1">
+          Explore the dynamics of neurodegenerative diseases to learn statistical models that characterize average and individual progressions of the disease.
+
+          <br>&bull;<br>
+          As part of the Aramis Lab, located at the Brain and Spine Institute, at the Pitié Salpétrière Hospital, in Paris, I develop new tools to analyze the progression of neurodegenerative diseases, especially Alzheimer's Disease.
+          I contribute to explore new ways to understand the brain evolution thanks to Machine Learning tools.
+          <br>&bull;<br>
+          The main goal we are trying to reach are multiples
+          <ul>
+            <li>Get a better understanding of the disease progression for the doctors</li>
+            <li>Not only to be able to predict individual futur stage but also to better understand one's particular trajectory</li>
+            <li>Give tools to clinical trials in order to measure the impact of a drug versus what should have had happend that we try to determine</li>
+          </ul>
+        </div>
+      </div>
+    -->
     </div>
 
-    <div class="col py-3">
-      <div clas="container">
 
-        <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="about-text">
+          I explore the dynamics of neurodegenerative diseases to learn statistical models that characterize average and individual progressions of the disease.
+        </div>
+
+        <br><br>
+
+        <div class="about-text">
+          As part of the Aramis Lab, located at the Brain and Spine Institute, at the Pitié Salpétrière Hospital, in Paris, I develop new tools to analyze the progression of neurodegenerative diseases, especially Alzheimer's Disease.
+          I contribute to explore new ways to understand the brain evolution thanks to Machine Learning tools.
+        </div>
+
+        <br><br>
+
+        <div class="about-text">
+          The main goal we are trying to reach are multiples
+          <ul>
+            <li>Get a better understanding of the disease progression for the doctors</li>
+            <li>Not only to be able to predict individual futur stage but also to better understand one's particular trajectory</li>
+            <li>Give tools to clinical trials in order to measure the impact of a drug versus what should have had happend that we try to determine</li>
+          </ul>
+        </div>
+      </div>
 
 
-        <section id="research">
-          <div class="row">
-            <h2>Research</h2>
-            Explore the dynamics of neurodegenerative diseases to learn statistical models that characterize average and individual progressions of the disease.
-          </div>
-        </section>
+      Add a few words about Leasp(y) and Digital Brain - to be released soon.
+    </div>
 
-          <section id="publications">
-            <div class="row">
-              <h2>Publications</h2>
-            </div>
-            <div class="row">
-              <ul>
-              {% for pub in site.data.research.publications %}
-                <li>
-                  <b>{{pub.title}}</b><br>
-                  <i>{{pub.authors}}</i><br>
-                  {{pub.year}} in {{pub.in}} - Link to <a href={{pub.pdf}}>pdf</a><br>
-                  {% for tag in pub.tags %}
-                    <span class="label label-primary material-label material-label_primary main-container__column">{{tag}}</span>
-                  {%endfor%}
-                </li>
+    <!-- PUBLICATIONS SECTION -->
+    <div class="row" id="publications">
+      <div class="col-md-10">
+        <h2 class="title">Publications</h2>
+      </div>
+    </div>
 
-              {% endfor %}
-              </ul>
-            </div>
-          </section>
+    {% for pub in site.data.research.publications %}
+      <div class="row publi-row">
 
-          <section id="projects">
-            <div class="row">
-              <h2>Projects</h2>
-            </div>
-            <div class="row">
-              <ul>
-                <li>Leasp Software</li>
-                <li>Tadpole</li>
-              </ul>
-            </div>
-          </section>
-
-          <section id="teaching">
-            <div class="row">
-              <h2>Teaching</h2>
-            </div>
-            <div class="row">
-              <ul>
-                <li>Data Science Summer School</li>
-                <li>Advanced Machine Learning</li>
-                <li>Programmation (C)</li>
-              </ul>
-            </div>
-          </section>
-
+        <div class="col-md-2">
+          <div class="material-project publi-modal" href="#{{pub.id}}" data-toggle="modal">
+            <img class="img-fluid" src="{{site.baseurl}}/{{pub.img}}">
           </div>
 
         </div>
+
+        <div class="col-md-8">
+          <div class="about-text">
+            <span class="publi-title">{{pub.title}}</span>
+            <div class="publi-info">In <i>{{pub.in}}</i>. {{pub.year}}. <a href="{{site.baseurl}}/{{pub.pdf}}">PDF</a></div>
+            <div class="publi-authors">{{pub.authors}}</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="portfolio-modal modal fade" id="{{pub.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-md-10 offset-md-1 text-center">
+                <h2 style="font-size:36px;">{{pub.title}}</h2>
+                <h3 class="page-subtitle text-muted">Abstract</h3>
+                <hr style="width:40%; background:#02456F;">
+                {{pub.abstract}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+
+
+    <!----- TEACHING SECTION --->
+    <div class="row" id="teaching">
+      <div class="col-md-10">
+        <h2 class="title">Teaching</h2>
+      </div>
+    </div>
+
+    {% for teach in site.data.research.teaching %}
+      <div class="row teach-row">
+        <div class="col-md-3">
+          <div class="teach-title">{{teach.title}}</div>
+          <div class="teach-period">{{teach.period}}</div>
+          <div class="teach-location">{{teach.location}}</div>
+        </div>
+
+        <div class="col-md-7 teach-text">
+          {% for d in teach.description %}
+            <div>{{d}}</div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+
+
+
+
     </div>
 </div>
+</div>
 
+{% include content/map.html %}
+
+<br>
 
 <script>
-
+  var aboutlink = document.getElementById('researchlink');
+  aboutlink.className="nav-link main-nav-link active";
 </script>

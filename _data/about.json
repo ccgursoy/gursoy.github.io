@@ -1,10 +1,10 @@
 {
   "description" : [
-    "I'm a PhD Student in Machine Learning, under the supervision of Stanley Durrleman and Stéphanie Allassonnière.
-    Ecole Polytechnique (CMAP) and Brain and Spine Institute (@ Pitié Salpétrière hospital). My thesis aims at developing Machine Learning tools to investigate neurodegenerative processes and dynamics",
-    "Using my mathematical and coding skills to create impact where it matters.
-    Beyond medical application, I love to develop tools or share my knowledge in many applications to help people achieve their goals, as long as they involve motivating & positive impacts. This includes various projects from a chatbot for a Social-and-Solidarity association to a web-app to choose and analyze the different political parties at the French election through teaching at University or a Data Science Summer School.",
-    "Learning and keeping an open mind to innovative ideas, framework, tools.
+    "I'm a PhD Student in Machine Learning / Applied Maths, under the supervision of Stanley Durrleman and Stéphanie Allassonnière.
+    I'm part of the Center of Applied Maths of Ecole Polytechnique - <a href='https://portail.polytechnique.edu/cmap/fr'>CMAP</a> - and of the <a href='http://www.aramislab.fr/'>Aramis Lab</a> at the Brain and Spine Institute - <a href='https://icm-institute.org/fr/'>ICM</a> - at the Pitié Salpétrière hospital in Paris. My thesis aims at developing Machine Learning tools to investigate neurodegenerative processes and dynamics",
+    "My goal is to use my mathematical and coding skills to create impact where it matters.
+    Beyond medical application, I love developing tools or sharing my knowledge in applications with motivating & positive impacts : a chatbot for a Social-and-Solidarity company, a web-app to choose and analyze the political parties at the French election, a cashless app for a music festival, teaching at a Data Science Summer School, ...",
+    "Learning and keeping an open mind to innovative ideas, framework, tools is key.
     Because I would like to be as proficient as possible, I try to stay tuned about the innovations and researches that might impact my working areas."
   ],
   "skills": [
@@ -21,7 +21,7 @@
     {
       "title": "Language",
       "img": "language",
-      "tags": ["French", "Ukrainian", "English", "Russian", "Ancient greek"]
+      "tags": ["French", "Ukrainian", "English", "Russian"]
     }
   ]
 }

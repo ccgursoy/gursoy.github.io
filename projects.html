@@ -3,5 +3,125 @@ layout: default
 permalink: /projects/
 ---
 
+<div class="row" id="body-row">
 
-{% include content/projects.html %}
+<!-- Sidebar -->
+<div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
+  <span class="list-group sticky-top sticky-offset">
+    {% include sticky_side.html %}
+</div>
+<!-- Sidebar END-->
+
+
+<div class="col py-3">
+
+
+  <!-- RESEARCH SECTION -->
+  <div class="container" style="text-align:center; margin-bottom:40px;">
+    <div class="row" id="about">
+      <div class="col-md-10">
+      <h2 class="page-title">Projects</h2>
+      <h3 class="page-subtitle text-muted">A few words about what I do on the side.</h3>
+      <hr style="width:40%; background:#02456F;">
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-10">
+        {% for project in site.data.projects %}
+        <div href="#{{project.id}}" class="row project" data-toggle="modal" style="background-image: url({{site.baseurl}}/{{project.img}}); background-size:100%">
+            <div class="col-md-10 offset-md-1" >
+              <div class="project-title">{{project.title}}</div>
+
+              <div class="project-subtitle">{{project.subtitle}}</div>
+            </div>
+
+        </div>
+
+        <!-- MODAL -->
+        <div class="portfolio-modal modal fade" id="{{project.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                  <div class="rl">
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 mx-auto">
+                    <h2 class="page-title">{{project.title}}</h2>
+                    <h3 class="page-subtitle text-muted">{{project.subtitle}}</h3>
+                    <hr style="width:40%; background:#02456F;">
+                    {% for d in project.description %}
+                    <div>
+                      {{d}}
+                    </div>
+                    {% endfor %}
+                    <div style="margin-top:20px">
+                    {% for tag in project.tags %}
+                      <span class="interests-tag">{{tag}}</span>
+                    {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        Some other projects I've done :
+        <ul>
+          <li>This website</li>
+          <li>Aramis website - <a href="http://www.aramislab.fr/"> here</a></li>
+          <li>Hackathons (Winner at the FrAndroid hackathon, Arte, ...)</li>
+          <li>Chrome extension to keep track of the time spent online</li>
+          <li>Speech-To-Text (English and French)</li>
+          <li>NLP for movie reviews</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<script>
+  var aboutlink = document.getElementById('projectslink');
+  aboutlink.className="nav-link main-nav-link active";
+</script>
+<!--
+<script>
+
+  {% for project in site.data.projects %}
+    projectRow = document.getElementById("projectRow");
+    projectModals = document.getElementById("projectModals");
+
+    projectJSON = {{project | jsonify}};
+    project = createProject(projectJSON);
+    projectRow.appendChild(project);
+
+    projectModal = createProjectModal(projectJSON.modal);
+    projectModals.appendChild(projectModal);
+
+  {%endfor%}
+
+</script>
+-->

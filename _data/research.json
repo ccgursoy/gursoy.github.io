@@ -1,36 +1,47 @@
 {
   "publications": [
     {
+      "id": "digital",
       "title": "Simulating Alzheimer’s Disease Progression with Personalised Digital Brain Models",
+      "img": "img/research/preprint_cut.png",
       "authors": "Koval I., Bône A., Louis M., Bottani S., Marcoux A., Samper-Gonzalez J., Burgos N., Charlier B., Bertrand A., Epelbaum S., Colliot O., Allassonnière S., Durrleman S.",
       "year": 2018,
       "in": "Under revision",
-      "pdf": "https://hal.inria.fr/hal-01964821/file/SimulatingAlzheimer_low_resolution%20%281%29.pdf",
-      "tags": [],
+      "pdf": "pdf/preprint.pdf",
+      "tags": ["Digital brain", "Virtual cohort", "Alzheimer's Disease", "Personalized progression"],
+      "abstract": "Simulating the effects of Alzheimer’s disease on the brain is essential to better understand, predict and control how the disease progresses in patients. Our limited understanding of how disease mechanisms lead to changes seen in brain images and clinical examination hampers the development of biophysical simulations. We propose here a statistical learning approach, where the repeated observations of several patients over time are used to synthesise personalized digital brain models. They provide spatiotemporal views of structural and functional brain alterations and associated scenarios of cognitive decline at the individual level. We show that the personalization of the models to unseen subjects reconstructs their progression with errors of the same order as the uncertainty of the measurements. Simulation of synthetic patients generalise the distributions of the data in the training cohort. The analysis of factors modulating disease progression evidences a prominent sexual dimorphism and probable compensatory mechanisms in APEO-ε4 carriers. This first simulator of its kind offers an unparalleled way to explore the heterogeneity of the disease’s manifestation on the brain, and to predict its progression in each patient."
     },
     {
+      "id": "decision",
       "title": "Design of a Decision Support System for Predicting the Progression of Alzheimer's Disease",
+      "img": "img/research/preprint_cut_2.png",
       "authors": "Ansart M., Koval I., Bertrand A., Dormont S., Durrleman S.",
       "year": 2018,
-      "in": "ALzheimer's & Dementia",
-      "pdf": "https://www.alzheimersanddementia.com/article/S1552-5260(18)30543-0/abstract",
+      "in": "Alzheimer's & Dementia",
+      "pdf": "",
       "tags": [],
     },
     {
+      "id": "frontiers",
       "title": "Spatiotemporal Propagation of the Cortical Atrophy: Population and Individual Patterns",
+      "img": "img/research/frontiers.png",
       "authors": "Koval I., Schiratti J.-B., Routier A., Bacci M., Colliot O., Allassonniere S., Durrleman S.",
       "year": 2018,
       "in": "Frontiers in Neurology",
-      "pdf": "https://hal.inria.fr/hal-01910400/document",
+      "pdf": "pdf/frontiers.pdf",
       "tags": [],
+      "abstract": "Repeated failures in clinical trials for Alzheimer’s disease (AD) have raised a strong interest for the prodromal phase of the disease. A better understanding of the brain alterations during this early phase is crucial to diagnose patients sooner, to estimate an accurate disease stage, and to give a reliable prognosis. According to recent evidence, structural alterations in the brain are likely to be sensitive markers of the disease progression. Neuronal loss translates in specific spatiotemporal patterns of cortical atrophy, starting in the enthorinal cortex and spreading over other cortical regions according to specific propagation pathways. We developed a digital model of the cortical atrophy in the left hemisphere from prodromal to diseased phases, which is built on the temporal alignment and combination of several short-term observation data to reconstruct the long-term history of the disease. The model not only provides a description of the spatiotemporal patterns of cortical atrophy at the group level but also shows the variability of these patterns at the individual level in terms of difference in propagation pathways, speed of propagation, and age at propagation onset. Longitudinal MRI datasets of patients with mild cognitive impairments who converted to AD are used to reconstruct the cortical atrophy propagation across all disease stages. Each observation is considered as a signal spatially distributed on a network, such as the cortical mesh, each cortex location being associated to a node. We consider how the temporal profile of the signal varies across the network nodes. We introduce a statistical mixed-effect model to describe the evolution of the cortex alterations. To ensure a spatiotemporal smooth propagation of the alterations, we introduce a constrain on the propagation signal in the model such that neighboring nodes have similar profiles of the signal changes. Our generative model enables the reconstruction of personalized patterns of the neurodegenerative spread, providing a way to estimate disease progression stages and predict the age at which the disease will be diagnosed. The model shows that, for instance, APOE carriers have a significantly higher pace of cortical atrophy but not earlier atrophy onset."
     },
     {
+      "id": "miccai",
       "title": "Statistical Learning of Spatiotemporal Patterns from Longitudinal Manifold-Valued Networks",
+      "img": "img/research/miccai_cut.png",
       "authors": "Koval I., Schiratti J.-B., Routier A., Bacci M., Colliot O., Allassonnière S., Durrleman S.",
       "year": 2017,
       "in": "MICCAI",
-      "pdf": "https://arxiv.org/pdf/1709.08491.pdf",
-      "tags": ["Spatiotemporal propagation", "Disease progression"]
+      "pdf": "pdf/miccai.pdf",
+      "tags": ["Spatiotemporal propagation", "Spatially distributed data", "MCMC methods", "Stochastic EM algorithm", "Riemannian Geometry"],
+      "abstract": "We introduce a mixed-effects model to learn spatiotempo- ral patterns on a network by considering longitudinal measures dis- tributed on a fixed graph. The data come from repeated observations of subjects at different time points which take the form of measure- ment maps distributed on a graph such as an image or a mesh. The model learns a typical group-average trajectory characterizing the prop- agation of measurement changes across the graph nodes. The subject- specific trajectories are defined via spatial and temporal transforma- tions of the group-average scenario, thus estimating the variability of spatiotemporal patterns within the group. To estimate population and individual model parameters, we adapted a stochastic version of the Expectation-Maximization algorithm, the MCMC-SAEM. The model is used to describe the propagation of cortical atrophy during the course of Alzheimer’s Disease. Model parameters show the variability of this aver- age pattern of atrophy in terms of trajectories across brain regions, age at disease onset and pace of propagation. We show that the personaliza- tion of this model yields accurate prediction of maps of cortical thickness in patients."
     }
   ],
   "Projects": [
@@ -55,37 +66,41 @@
       }
     }
   ],
-  "Teaching": [
+  "teaching": [
     {
-      "id": "teaching_1",
-      "title": "Data Science Summer School",
-      "html": "",
-      "tags": ["Machine Learning", "Healthcare", ""],
-      "modal": {
-        "title": "",
-        "text" : "",
+      "title": "Machine Learning in Healthcare @ Data Science Summer School",
+      "period": "Summer 2017 & 2018",
+      "location": "Lviv, Ukraine",
+      "description" : [
+        "Courses of Machine Learning, applied to Healthcare, at an international Summer School. They include 5 lectures of 3 hours each, and, a 4 days project, with students (Bachelor, Master and PhD) and workers.",
+        "PDF of the courses : <a href='/pdf/summerschool/1_Introduction.pdf''>Intro</a>, <a href='/pdf/summerschool/2_FeatureExtraction.pdf''>Feature Extraction</a>, <a href='/pdf/summerschool/3_Exploration.pdf''>Exploration</a>, <a href='/pdf/summerschool/4_Algorithms.pdf''>Algorithms</a>, <a href='/pdf/summerschool/5_Other.pdf''>Miscelleanous</a>."
+      ],
+      "links" : {
+        "My course": "http://cs.ucu.edu.ua/en/course/machine-learning-in-healthcare-2018/",
+        "The Summer School": "http://cs.ucu.edu.ua/en/summerschool/"
       },
-      "lectures": ["one", "two", "three"]
+      "tags": []
     },
     {
-      "id": "teaching_2",
+      "title": "Programming in C",
+      "period": "2017 / 2018",
+      "location": "University Pierre et Marie Curie",
+      "description" : [
+        "Introductory C classes for licence (Bachelor) students, including practical sessions on computer, blackboard sessions, homeworks and exams"
+      ],
+      "links" : [],
+      "tags": []
+    },
+    {
       "title": "Advanced Machine Learning",
-      "html": "",
-      "tags": [""],
-      "modal": {
-        "title": "",
-        "text" : ""
-      }
-    },
-    {
-      "id": "teaching_3",
-      "title": "C++ Programming",
-      "html": "",
-      "tags": [""],
-      "modal": {
-        "title": "",
-        "text" : ""
-      }
+      "period": "2015",
+      "location": "Master Data Science, Telecom Paris",
+      "description" : [
+        "Supervision of practical sessions of the Advanced Machine Learniing class of the Data Science master degree",
+        "Teachers in charge of the class : Florence d'Alché-Buc & Erwan Le Pennec"
+      ],
+      "links" : [],
+      "tags": []
     }
   ]
 }

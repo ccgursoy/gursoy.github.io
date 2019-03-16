@@ -9,46 +9,133 @@ title: Home
 <!-- Sidebar -->
 <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
     <span class="list-group sticky-top sticky-offset">
-        <div style="margin-top:10px;">
-          <img class="profile" src="img/profil.jpg">
-        </div>
-        <a href="#about" class="nav-link side-link js-scroll-trigger">About me</a>
-        <a href="#interests" class="nav-link side-link js-scroll-trigger">Skills & Interests</a>
-        <a href="#education" class="nav-link side-link js-scroll-trigger">Education</a>
+      <div style="margin-top:10px; margin-bottom:14px;">
+        <img class="profile" src="img/profil.jpg">
+      </div>
+      <a href="#about" class="nav-link side-link js-scroll-trigger">➤ About me</a>
+      <a href="#interests" class="nav-link side-link js-scroll-trigger">➤ Skills & Interests</a>
+      <a href="#education" class="nav-link side-link js-scroll-trigger">➤ Education</a>
 
+      <hr style="width:60%; background:#02456F;">
+      {% include sticky_side.html %}
     </span>
 </div>
 <!-- Sidebar END-->
 
 <div class="col py-3">
-  <div clas="container">
 
-    <!----- ABOUT SECTION --->
-    <div class="row" id="about"><h2>Few things about me</h2></div>
+  <!-- LANDING FULL SCREEN PAGE --->
+  <div class="container" style="min-height:100vh; text-align:center;">
+
+    <div class="row" id="about">
+      <div class="col-md-10">
+      <h2 class="page-title">Welcome to  my webpage</h2>
+      <h3 class="page-subtitle text-muted">A few words about me.</h3>
+      <hr style="width:40%; background:#02456F;">
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+      <div class="col-md-8 offset-md-1">
+        I'm a PhD student in Machine Learning,
+        <br>applied to neurosciences
+        <br>&bull;<br>
+        Brain & Spine Institute - Centre Mathématiques Appliquées de l'Ecole Polytechnique
+        <br>&bull;<br>
+        Always involved in new projects.
+      </div>
+    </div>
+
+
+    <div class="row" style="margin-top:5%;">
+      <div class="col-md-2 offset-md-3">
+        <a class="btn btn-primary" href="/research" role="button">Research</a>
+      </div>
+      <div class="col-md-2 ">
+        <a class="btn btn-primary" href="/projects" role="button">Projects</a>
+      </div>
+    </div>
+
+
+
+    <div class="row" style="margin-top:10%;">
+
+      <div class="col-md-10">
+        <hr style="width:30%; background:#02456F;">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a href='mailto:igor[dot]koval[at]icm-institute[dot]org'>
+              <i class="fa fa-envelope "></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a href='https://www.linkedin.com/in/igor-koval-98767360/'>
+              <i class="fa fa-linkedin "></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a href='https://scholar.google.fr/citations?user=dlgocecAAAAJ&hl=fr'>
+              <i class="fa fa-google"></i>
+            </a>
+          </li>
+
+          <li class="list-inline-item">
+            <a href='https://github.com/Symcies'>
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:30px;">
+      <div class="col-md-10">
+        <a href="#me" class="btn btn-circle js-scroll-trigger btn-xl text-uppercase">
+          <i class="fa fa-angle-double-down animated "></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+
+    <!-- ABOUT SECTION --->
+    <div class="row" id="me">
+      <div class="col-md-10">
+      <h2>About me</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        {% for d in site.data.about.description%}
+          <div class="about-text">{{d}}</div><br><br>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row">
+
+    </div>
+
+  <!-- INTERESTS SECTION --->
+  <div class="row" id="interests">
     <div class="col-md-10">
-      {% for d in site.data.about.description%}
-        <span>{{d}}</span><br><br>
-      {% endfor %}
-      <span>
-   </div>
-   <br><br>
-
-   <div class="row">
-    <h6>To know more about my <a href="/projects"> projects </a> and <a href="/research">research</a></h6>
-  </div>
-
-  </div>
-
-
-
-  <!----- INTERESTS SECTION --->
-  <div class="row" id="education"><h2>Scientific Interests and Skills</h2></div>
+      <h2>Scientific Interests & Skills</h2>
+    </div>
+    </div>
 
   {% for s in site.data.about.skills %}
     <div class="row text-center interests-row">
       <div class="col-md-2">
-        <i class="fa fa-{{s.img}}"></i>
-        <h6 class="service-heading">{{s.title}}</h6>
+        <i class="fa fa-{{s.img}} fa-4x"></i>
+        <h5>{{s.title}}</h5>
       </div>
 
       <div class="col-md-8">
@@ -60,24 +147,39 @@ title: Home
   {% endfor %}
 
 
-  <!----- EDUCATION SECTION --->
-  <div class="row" id="education"><h2>Education & Experience</h2></div>
-
-  {% for edu in site.data.education %}
-    <div class="row education-row">
-      <div class="col-md-2 education-img">
-        <img class="img-fluid" src={{edu.img}} alt="">
-      </div>
-      <div class="col-md-8 education-text">
-        <div class="education-title">{{edu.title}}</div>
-        <div class="education-period">{{edu.period}}</div>
-        <div>{{edu.description}}</div>
-        {% for tag in edu.tags %}
-          <span class="education-tag">{{tag}}</span>
-        {% endfor %}
-      </div>
+  <!-- EDUCATION SECTION -->
+  <div class="row" id="education">
+    <div class="col-md-10">
+      <h2>Education</h2>
     </div>
-  {% endfor %}
+  </div>
 
+  <div class="row">
+    <div class="col-md-10">
+      {% for edu in site.data.education %}
+        <div class="row education-row">
+          <div class="col-md-2 education-img">
+            <img class="img-fluid" src={{edu.img}} alt="">
+          </div>
+          <div class="col-md-10">
+            <div class="about-text">
+              <div class="education-title">{{edu.title}}</div>
+              <div class="education-period">{{edu.period}}</div>
+              <div>{{edu.description}}</div>
+              {% for tag in edu.tags %}
+                <span class="education-tag">{{tag}}</span>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 </div>
+</div>
+
+<script>
+  var aboutlink = document.getElementById('aboutlink');
+  aboutlink.className="nav-link main-nav-link active";
+</script>

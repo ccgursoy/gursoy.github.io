@@ -1,5 +1,5 @@
 <!-- Services -->
- <section id="map" class="bg-light" style="padding-bottom:0px;">
+ <section id="map" style="padding-bottom:0px;">
    <div class="container">
      <div class="row">
        <div class="col-lg-12 text-center">
@@ -14,16 +14,16 @@
     <script>
 
     function createMapPopUp(marker) {
-      var titleDiv = "<div class=\"material-project__heading\"><h4>" + marker.title + "</h4></div>";
-      var locationDiv = "<div class=\"mapboxgl-popup-location\">@ " + marker.location + "   (" + marker.date + ")</div>";
+      var titleDiv = "<div class=\"mapbox-title\">" + marker.title + "</div>";
+      var locationDiv = "<div class=\"mapbox-sub\">" + marker.location + " - " + marker.date + "</div>";
 
-      var descriptionDiv = "<div class=\"mapboxgl-popup-description\">";
+      var descriptionDiv = "<div class=\"mapbox-text\">";
       for(var i = 0; i < marker.description.length; ++i) {
         descriptionDiv += "<p>" + marker.description[i] + "</p>";
       }
       descriptionDiv += "</div>"
 
-      var linksDiv = "<div class=\"mapboxgl-popup-links\">Links : ";
+      var linksDiv = "<div class=\"mapbox-links\">";
       var i = 0;
       for (var key in marker.links) {
         i += 1;
@@ -52,7 +52,7 @@
         style: 'mapbox://styles/symcies/cjdc6sivlalo12rlcv3l5uphv',
         scrollZoom: false,
         center: [-22, 46],
-        zoom:2.9,
+        zoom:2.4,
         doubleClickZoom:true
     });
 

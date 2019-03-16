@@ -23,286 +23,145 @@ $fa-font-path:        "../font/font-awesome";
 
 body {
     padding-top: 106px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .sticky-offset {
     top: 136px;
-
 }
 
-p {
+a {
+  color: #5ba3d5;
+}
+
+h2 {
+  margin-top:40px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.page-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.page-subtitle {
+  margin-bottom: 10px !important;
   font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+
+
+/**************/
+/*   SIDEBAR  */
+/**************/
 
 .profile {
   display: block;
   margin: 0 auto;
-
-  padding: 3px;
   height: auto;
-  width: 50%;
+  width: 60%;
   border-radius: 50%;
-
-}
-
-.navbar {
-  padding: 30px;
-  background-color: #02456F;
+  border: 6px solid #02456f;
 }
 
 .side-link{
-  font-size: 18px;
-  padding-left: 100px;
+  font-size: 22px;
+  padding-left: 25%;
   color: #02456F;
 }
 
-h2 {
-  margin-top:60px;
+
+.about-link{
+  color: inherit;
 }
 
-.fa {
-  font-size:3em;
+.about-link .fa {
+  margin-right:10px;
 }
 
+.sticky-side-list {
+  list-style-type: none;
+  padding: 0px;
+}
 
+.sticky-side {
+  padding-left: 25%;
+}
 
 /**************/
-/*  RESEARCH  */
+/*   NAVBAR   */
 /**************/
 
-.card-header {
-  background-color: $theme1;
-  cursor:pointer;
+
+.navbar {
+  padding: 10px 140px;
+  background-color: #02456F;
 }
-.card-header:hover {
-  background-color: $theme2;
-  transition: all .5s ease-in-out;
-}
-.card-header{
-  h5 {
-    font-weight: 400;
-    font-family: Montserrat, "Helvetica";
-    font-size: 16px;
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 10px 30px 14px 0px;
   }
 }
 
+.navbar-brand {
+  font-size: 28px;
+}
 
-
-.material-card {
-  border-radius: 0;
-  border: none;
-  padding: 0;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
-}
-.material-card__header {
-  position: relative;
-}
-.material-card__content {
-  padding: 20px 10px;
-}
-.material-card__footer {
-  padding: 0px 20px;
-  border-top: 1px solid #eee;
-}
-.material-card__footer:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.material-card__img {
-  max-width: 100%;
-  height: auto;
-}
-.material-card__title {
-  margin: 0 0 15px;
-}
-.material-card__showmore {
-  display: block;
-}
-.material-card__showmore_pos-left {
-  float: left;
-  margin-right: 10px;
-}
-.material-card__showmore_pos-right {
-  float: right;
-  margin-left: 10px;
+.main-nav-link{
+  font-size: 20px;
+  padding: 16px 20px !important;
 }
 
 
-.material-panel {
-  margin-top: 10px;
-  border: none;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
-}
-.material-panel__heading {
-  border-radius: 4px 4px 0 0;
-  font-weight: 700;
-  border: none;
-  padding: 10px 10px;
-  margin: 0px;
-}
-.material-panel__body {
-  background-color: #fff;
-  padding: 5px 10px;
-}
-.material-panel__heading {
-  background-color: #eee;
-  color: #000;
-}
-.material-panel_primary .material-panel__heading {
-  background-color: $theme1;
-  color: #fff;
+/**************/
+/*    ABOUT   */
+/**************/
+
+
+.btn-circle:focus, .btn-circle:hover {
+    outline: 0;
+    color: #fff;
+    background: black;
 }
 
-
-
-
-/************/
-/*  MAPBOX  */
-/************/
-
-#mapbox {
-  width: 100%;
-  height: 600px;
-}
-
-.marker {
-  background-image: url('../img/map-icon.png');
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-
-.mapboxgl-popup {
-  border-radius: 4px 4px 0px 0px;
-  max-width: 700px;
-
-}
-
-
-.mapboxgl-popup-content {
-  text-align: center;
-  border-radius: 4px 4px 0px 0px !important;
-  font-family: 'Open Sans', sans-serif !important;
-  width: 450px;
-  padding: 0px !important;
-  overflow: hidden;
-}
-@media(max-width:767px) {
-  .mapboxgl-popup-content {
-    width: 90%;
-  }
-}
-
-.mapboxgl-popup-title {
-  padding: 10px;
-  font-size: 30px;
-  line-height: 10px;
-  background-color: $theme1;
-
-}
-
-.mapboxgl-popup-location {
-  font-style: italic;
+.btn-primary {
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   font-size: 18px;
-  padding: 10px 0px;
-
-}
-
-.mapboxgl-popup-description {
-  padding: 6px 10px;
-}
-
-.mapboxgl-popup-links {
-  background-color: $theme1;
-  font-size: 14px;
-  padding: 6px 0px;
-}
-
-/**************/
-/*  PROJECTS  */
-/**************/
-
-.material-project {
-  cursor: pointer;
-
-  border-radius: 4px 4px 0 0;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
-  min-height: 550px;
-  margin-bottom: 40px;
-}
-
-.material-project__heading {
-  padding: 10px 10px;
-  border-radius: 4px 4px 0 0;
-  color: white;
-  background-color: $theme1;
-}
-
-.material-project__heading h4 {
-  margin: 0px;
-}
-
-
-.material-project__image{
-  height: 180px;
-  overflow: hidden;
-  border-bottom: 1px solid gray;
-}
-
-.material-project__image img {
-  min-height: 100%;
-  min-width: 100%;
-  max-width: auto;
-}
-
-.material-project__body {
-  padding: 10px;
-}
-
-.material-project__footer {
-
-}
-
-/* Projects modal */
-
-
-
-
-/***************/
-/*  INTERESTS  */
-/***************/
-
-.interests-row {
-  margin: 16px 0px;
-}
-
-.interests-tag {
-  margin: 4px;
-  display: inline-block;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-size: 14px;
+  margin: 10px 15px;
+  color: #fff;
   background-color: #02456f;
-  color: #FFF
+  border-color: #02456f;
 }
 
-/***************/
-/*  EDUCATION  */
-/***************/
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid black;
+    border-radius: 100% !important;
+    font-size: 40px;
+    color: black;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
 
 .education-row {
   margin-bottom: 50px;
-
 }
-
 
 .education-img {
   display:table-cell;
@@ -312,10 +171,12 @@ h2 {
 
 .education-img img{
   max-height:120px;
-  max-width:130px;
+  max-width: 100%;
+
 }
 
-.education-text{
+.about-text{
+  padding: 0px 15px;
   border-left-style: solid;
   border-left-color: #02456f;
   border-left-width: medium;
@@ -346,92 +207,189 @@ h2 {
 }
 
 
-/**********/
-/*  TAGS  */
-/**********/
+/**************/
+/*  RESEARCH  */
+/**************/
 
-
-
-.material-label {
-  font-weight: 400;
-  font-size: 14px;
-  display: inline-block;
-  border-radius: 4px;
-  padding: 4px 16px;
-  margin:2px;
-  -webkit-transition-property: box-shadow, background-color;
-  transition-property: box-shadow, background-color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+.publi-row {
+  margin-bottom: 40px;
 }
 
-.material-label_lg {
-  padding: 5px 20px;
+.publi-modal {
+  min-height: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.publi-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.publi-authors {
+  font-size: 14px;
+}
+
+.publi-info {
+  color: #b4b4b4;
+}
+
+
+
+.publi-tag {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #02456f;
+  color: #FFF
+}
+
+.teach-row {
+  margin-bottom: 50px;
+}
+
+.teach-title {
+
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+.teach-period {
+
+  color: #b4b4b4;
+}
+
+.teach-location {
   font-size: 16px;
 }
-.material-label_sm {
-  padding: 3px 12px;
-  font-size: 13px;
-}
-.material-label_xs {
-  padding: 2px 8px;
-  font-size: 12px;
-}
-.material-label {
-  background-color: #eee;
-  border: 1px solid #eee;
-  color: #000;
-}
-.material-label:hover {
-  background-color: #f7f7f7;
-  border: 1px solid #f7f7f7;
-}
-.material-label_primary {
-  background-color: $theme1;
-  border: 1px solid $theme1;
-  color: #fff;
-}
-.material-label_primary:hover {
-  background-color: #64b2f5;
-  border: 1px solid #64b2f5;
+
+.teach-text {
+  font-size: 16px;
 }
 
-/**********************************/
-/*  Intro button : grayscale css  */
-/**********************************/
+/************/
+/*  MAPBOX  */
+/************/
 
-.btn-circle:focus, .btn-circle:hover {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
+#mapbox {
+  width: 100%;
+  height: 500px;
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+.marker {
+  background-image: url('../img/map-icon.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.btn {
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border-radius: 0;
+
+.mapboxgl-popup {
+  border-radius: 4px 4px 0px 0px;
+  max-width: 350px;
+
 }
+
+.mapboxgl-popup-content {
+  text-align: center;
+  border-radius: 4px !important;
+  font-family: 'Open Sans', sans-serif !important;
+  width: 350px;
+  padding: 0px !important;
+  overflow: hidden;
+}
+@media(max-width:767px) {
+  .mapboxgl-popup-content {
+    width: 90%;
+  }
+}
+
+.mapbox-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.mapbox-sub {
+  font-size: 16px;
+  color: #b4b4b4;
+}
+
+
+.mapbox-text {
+  margin: 4px;
+  font-size: 14px;
+}
+
+.mapbox-text p {
+  line-height: 100% !important;
+  margin-bottom: 10px;
+}
+
+.mapbox-links {
+  font-size: 14px;
+}
+
+
+/***************/
+/*  INTERESTS  */
+/***************/
+
+.interests-row {
+  margin: 20px 0px;
+}
+
+.interests-tag {
+  margin: 3px;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #02456f;
+  color: #FFF;
+}
+
+/**************/
+/*  PROJECTS  */
+/**************/
+
+.project:hover {
+  opacity: 1;
+}
+
+.project {
+  height:180px;
+  margin-bottom: 20px;
+  color: white;
+  opacity: 0.9;
+}
+
+.project-title {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 28px;
+
+}
+
+.project-subtitle {
+  font-style: italic;
+  font-weight: 300;
+
+}
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
