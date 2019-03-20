@@ -1,74 +1,98 @@
-[
-{
-  "id": "candidats",
-  "title": "Les Candidats 2017",
-  "subtitle": "Candidates comparison for the French political elections",
-  "img": "img/projects/candidats2017.jpg",
-  "description": [
-    "Website about the french political elections in 2017.",
-    " Includes a personnalized survey to find one's most appropriate candidate based on a personnalized survey."],
-  "link": "https://lescandidats2017.fr",
-  "date": "First semester of 2017",
-  "tags": [
-      "Politics",
-      "Personalized survey",
-      "JavaScript",
-      "Node & Express",
-      "Bootstrap",
-      "SurveyJS"
-  ]
-}
-, {
-  "id": "bimbamjob",
-  "title": "BimBamJob",
-  "subtitle": "SMS Chatbot for job seekers",
-  "img": "img/projects/bimbamjob.jpg",
-  "description": [
-    "SMS chatbot to simplify registration and CV creation for people uncomfortable with online job seeking. The ChatBot is under deployement for BimBamJob - a social-oriented start-up for which the job has been done voluntarily"
-  ],
-  "link": "https://bimbamjob.fr/",
-  "date": "Some date",
-  "tags": [
-      "ChatBot",
-      "Social and Solidarity Economy",
-      "Python",
-      "DialogFlow Google Api",
-      "Celery",
-      "Flask"
-  ]
+[{
+	"id": "candidats",
+	"title": "Les Candidats 2017",
+	"subtitle": "Candidates comparison for the French political elections",
+	"img": "img/projects/candidats2017.jpg",
+	"description": {
+		"Description": [
+			"Website about the french political elections in 2017. Based on user-defined priorities (environment, economy,  education, ...), it provides a personalized survey to find one's most appropriage candidate",
+			"It also includes a comparison of candidates opinions on a broad range of topics, as well as the candidates biographies.",
+			"The website was visited by more than ... unique users during the last two weeks of the election first round. Except from the technical part that was done on my own, the content and the information were gathered with <a href=''>Louise Hombert</a>."
+		],
+		"Technical details": [
+			"The front-end has been designed thanks to Bootstrap to make the website responsive (...% of the user ), and, thanks to <a href='https://surveyjs.io/Overview/Library/'>SurveyJS</a> library that provide open source survey library. ",
+			"The back-end has been built with nodeJS, communicating with a MongoDB database hosted on <a href='https://mlab.com/'>mlab</a>.",
+			"The final project is open-source, hosted <a href='https://github.com/Symcies/LesCandidats'> here on Github</a>. No information were collected about the user - except for the website activity, thanks to Google Analytics."
+		]
+	},
+	"link": "https://lescandidats2017.fr",
+	"date": "First semester of 2017",
+	"tags": [
+		"Politics",
+		"Personalized survey",
+		"JavaScript",
+		"Node & Express",
+		"Bootstrap",
+		"SurveyJS"
+	]
 }, {
-  "id":"cashless",
-  "title": "Cashless App",
-  "subtitle": "Cashless application for the Double 9 Festival ",
-  "img" : "img/projects/festival.jpg",
-  "description": [],
-  "link": "",
-  "date": "",
-  "tags": [
-  ]
-}, {
-  "id": "summerschool",
-  "title": "Data Science Summer School",
-  "subtitle": "Teacher of Machine Learning in Healthcare",
-  "img" : "img/projects/summerschool.jpg",
-  "description": [
-    "",
-    "PDF of the courses : <a href='/pdf/summerschool/1_Introduction.pdf''>Intro</a>, <a href='/pdf/summerschool/2_FeatureExtraction.pdf''>Feature Extraction</a>, <a href='/pdf/summerschool/3_Exploration.pdf''>Exploration</a>, <a href='/pdf/summerschool/4_Algorithms.pdf''>Algorithms</a>, <a href='/pdf/summerschool/5_Other.pdf''>Miscelleanous</a>."
-  ],
-  "link": "",
-  "date": "",
-  "tags": [
+	"id": "bimbamjob",
+	"title": "BimBamJob x Data For Good",
+	"subtitle": "SMS Chatbot for job seekers",
+	"img": "img/projects/bimbamjob.jpg",
+	"description": {
+		"Description": [
+			"<a href='https://dataforgood.fr/'>Data For Good</a> is an association which aims to gather a community of data scientists, machine learners, developers, computer scientists, ... to address the technical challenges of social-oriented association and companies.",
+			"On the other side, <a href='https://bimbamjob.fr/'>BimBamJob</a> is a company that facilitates job-seeking for low-qualified persons, that are not at ease with online job-offers nor the french language.",
+			"To this end, BimBamJob reached out the DataForGood community. Our team of 4 data scientists & architects developped a SMS chatbot for job seekers. Based on the information they provide, the bot is able to create a curriculum vitae (personnal information, education, experiences, ...)",
+			"A Proof of Concept has then been developped to match individual curriculum to different job offers.",
+			"As this is the aim of the Data For Good community, the job has been done voluntarily"
+		],
+		"Techical details": [
 
-  ]
+		]
+	},
+	"link": "https://bimbamjob.fr/",
+	"date": "Some date",
+	"tags": [
+		"ChatBot",
+		"Social and Solidarity Economy",
+		"Python",
+		"DialogFlow Google Api",
+		"Celery",
+		"Flask"
+	]
 }, {
-  "id":"atlas",
-  "title": "Grand Atlas du Cerveau",
-  "subtitle": "Glénat - Le Monde - ICM",
-  "img" : "img/projects/atlaslemonde.jpg",
-  "description": [],
-  "link": "",
-  "date": "Summer 2017 & 2018",
-  "tags": [
-  ]
-}
-]
+	"id": "cashless",
+	"title": "Cashless App",
+	"subtitle": "Cashless application for the Double 9 Festival ",
+	"img": "img/projects/festival.jpg",
+	"description": {
+		"Description": [
+			"SMS chatbot to simplify registration and CV creation for people uncomfortable with online job seeking. The ChatBot is under deployement for BimBamJob - a social-oriented start-up for which the job has been done voluntarily"
+		],
+		"Techical details": [
+			""
+		]
+	},
+	"link": "",
+	"date": "",
+	"tags": []
+}, {
+	"id": "summerschool",
+	"title": "Data Science Summer School",
+	"subtitle": "Teacher of Machine Learning in Healthcare",
+	"img": "img/projects/summerschool.jpg",
+	"description": {
+		"Description": [
+			"PDF of the courses : <a href='/pdf/summerschool/1_Introduction.pdf''>Intro</a>, <a href='/pdf/summerschool/2_FeatureExtraction.pdf''>Feature Extraction</a>, <a href='/pdf/summerschool/3_Exploration.pdf''>Exploration</a>, <a href='/pdf/summerschool/4_Algorithms.pdf''>Algorithms</a>, <a href='/pdf/summerschool/5_Other.pdf''>Miscelleanous</a>."
+		],
+		"Techical details": [
+			""
+		]
+	},
+	"link": "",
+	"date": "",
+	"tags": [
+
+	]
+}, {
+	"id": "atlas",
+	"title": "Grand Atlas du Cerveau",
+	"subtitle": "Glénat - Le Monde - ICM",
+	"img": "img/projects/atlaslemonde.jpg",
+	"description": [],
+	"link": "",
+	"date": "Summer 2017 & 2018",
+	"tags": []
+}]

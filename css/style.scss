@@ -178,10 +178,17 @@ h2 {
 .education-img img{
   max-height:120px;
   max-width: 100%;
+}
 
+@media (max-width: 640px) {
+  .education-img img{
+    max-height: 150px;
+    max-width: 180px;
+  }
 }
 
 .about-text{
+  text-align: justify;
   padding: 0px 15px;
   border-left-style: solid;
   border-left-color: #02456f;
@@ -241,6 +248,22 @@ h2 {
 
 
 
+@media (max-width: 640px) {
+  .publi-modal {
+    display: none;
+  }
+  .publi-title {
+    font-size: 16px;
+  }
+  .publi-authors {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
 .publi-tag {
   display: inline-block;
   line-height: 1;
@@ -277,6 +300,12 @@ h2 {
 
 .teach-text {
   font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  .teach-text div {
+    font-size: 14px;
+  }
 }
 
 /************/
@@ -395,6 +424,15 @@ h2 {
   font-weight: 300;
 
 }
+
+.project-paragraph {
+  margin-top: 30px;
+  margin-bottom:6px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+
 
 
 
