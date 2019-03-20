@@ -35,7 +35,7 @@ permalink: /projects/
     <div class="row">
       <div class="col-md-10">
         {% for project in site.data.projects %}
-        <div href="#{{project.id}}" class="row project" data-toggle="modal" style="background-image: url({{site.baseurl}}/{{project.img}}); background-size:100%">
+        <div href="#{{project.id}}" class="row project" data-toggle="modal" style="background-image: url({{site.baseurl}}/{{project.img}}); background-size: cover;">
             <div class="col-md-10 offset-md-1" >
               <div class="project-title">{{project.title}}</div>
 
@@ -65,7 +65,7 @@ permalink: /projects/
                       <div class="project-paragraph">{{paragraph[0]}}</div>
 
                       {% for sess in {{paragraph[1]}} %}
-                        <div style="text-align:justify;">
+                        <div style="text-align:justify; margin-top:10px;">
                           {{sess}}
                         </div>
                       {% endfor %}

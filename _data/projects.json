@@ -23,7 +23,8 @@
 		"JavaScript",
 		"Node & Express",
 		"Bootstrap",
-		"SurveyJS"
+		"SurveyJS",
+		"MongoDB"
 	]
 }, {
 	"id": "bimbamjob",
@@ -36,21 +37,21 @@
 			"On the other side, <a href='https://bimbamjob.fr/'>BimBamJob</a> is a company that facilitates job-seeking for low-qualified persons, that are not at ease with online job-offers nor the french language.",
 			"To this end, BimBamJob reached out the DataForGood community. Our team of 4 data scientists & architects developped a SMS chatbot for job seekers. Based on the information they provide, the bot is able to create a curriculum vitae (personnal information, education, experiences, ...)",
 			"A Proof of Concept has then been developped to match individual curriculum to different job offers.",
-			"As this is the aim of the Data For Good community, the job has been done voluntarily"
+			"As this is the aim of the Data For Good community, the job has been done voluntarily - further details <a href='https://dataforgood.fr/projects/3_bimbamjob.html'>here</a>"
 		],
 		"Techical details": [
-
+			"The service, which is hosted on Heroku, acts as an orchestrator that dialogs with the user and keeps track of the conversion progression. It send questions to an SMS provided that forward them directly on the user phone. The user answers are then analysed thanks to <a href='https://dialogflow.com/'> DialogFlow</a>, the Google API for Natural Language Processing, and specific details are stored on the user database.",
+			"The conversation is also send to the BimBamJob back-end so that BimBamJob employes are able to intervene directly on the workflow, and substitute the Bot with no change for the end user.",
+			"The users are then registered in the BimBamJob database, allowing personnalized job suggestions. Also, a website has been designed to allow users to get the final version of the Curriculum Vitae, and use it for personnal pursposes."
 		]
 	},
 	"link": "https://bimbamjob.fr/",
-	"date": "Some date",
+	"date": "April 2017 -  December 2019",
 	"tags": [
-		"ChatBot",
+		"SMS ChatBot",
 		"Social and Solidarity Economy",
 		"Python",
-		"DialogFlow Google Api",
-		"Celery",
-		"Flask"
+		"DialogFlow - Google Api"
 	]
 }, {
 	"id": "cashless",
@@ -59,10 +60,12 @@
 	"img": "img/projects/festival.jpg",
 	"description": {
 		"Description": [
-			"SMS chatbot to simplify registration and CV creation for people uncomfortable with online job seeking. The ChatBot is under deployement for BimBamJob - a social-oriented start-up for which the job has been done voluntarily"
+			"The Double 9 festival, for its third edition, decided to go cashless to avoid dealing large amounts of cash. As some friends were organizing the festival, two friends and I decided to build the cashless app voluntarily.",
+			"The participants are given a card that is synchronized with their identity. They then can credit their card and spend it at different shops. The app is use by the organization to credit the personal cards by scanning them with a phone, or by the sellers than scan the card to withdraw the money",
+			"The app development is still in progress as the festival is in June 2019 ; capacity and speed tests are under construction to handle the hundreds of participants at the festival"
 		],
 		"Techical details": [
-			""
+			"To be revealed soon, in open source (Github, React Native, Firebase, Javascript, ...)"
 		]
 	},
 	"link": "",
@@ -75,24 +78,42 @@
 	"img": "img/projects/summerschool.jpg",
 	"description": {
 		"Description": [
-			"PDF of the courses : <a href='/pdf/summerschool/1_Introduction.pdf''>Intro</a>, <a href='/pdf/summerschool/2_FeatureExtraction.pdf''>Feature Extraction</a>, <a href='/pdf/summerschool/3_Exploration.pdf''>Exploration</a>, <a href='/pdf/summerschool/4_Algorithms.pdf''>Algorithms</a>, <a href='/pdf/summerschool/5_Other.pdf''>Miscelleanous</a>."
+			"The faculty of applied science of the <a href='https://ucu.edu.ua/en/'>Ukrainian Catholic University</a>, in Lviv, organizes a yearly <a href='http://cs.ucu.edu.ua/en/summerschool/summer-school-2018/'>Data Science Summer School</a>. I have been invited as a lectured for the last two years.",
+			"The course, called 'Machine Learning in Healthcare', goes througth the classic Machine Learning pipelines with particular focuses on medical application (longitudinal data, noisy labels, image segmentation, disease staging, ...). It corresponds to 5 classes, including practical sessions.",
+			"The course is followed by a 4-day project (hackathon-style) that challenges students to diagnose and prognose the staging of Alzheimer's Disease patients."
 		],
-		"Techical details": [
-			""
+		"Details": [
+			"PDF of the courses : <a href='/pdf/summerschool/1_Introduction.pdf''>Intro</a>, <a href='/pdf/summerschool/2_FeatureExtraction.pdf''>Feature Extraction</a>, <a href='/pdf/summerschool/3_Exploration.pdf''>Exploration</a>, <a href='/pdf/summerschool/4_Algorithms.pdf''>Algorithms</a>, <a href='/pdf/summerschool/5_Other.pdf''>Miscelleanous</a>.",
+			"The practical sessions depends on a medical database that I do not wish to share publicly. Please contact me if interested."
 		]
 	},
 	"link": "",
 	"date": "",
 	"tags": [
-
+		"Machine Learning",
+		"Healthcare",
+		"Summer school",
+		"Teaching",
+		"Hackathon"
 	]
 }, {
 	"id": "atlas",
 	"title": "Grand Atlas du Cerveau",
-	"subtitle": "Glénat - Le Monde - ICM",
+	"subtitle": "Glénat x Le Monde x ICM",
 	"img": "img/projects/atlaslemonde.jpg",
-	"description": [],
+	"description": {
+		"Description": [
+			"The newspaper Le Monde, in collaboration with the editor Glénat, has collaborated with the <a href='https://icm-institute.org/fr/'>Brain and Spine Institute</a> were I work to publish the an <a href='https://boutique.lemonde.fr/atlas-du-cerveau.html'>'Grand Atlas du Cerveau'</a> (Large Atlas of the Brain).",
+			"Our team has contributed to the Atlas and some of my work and visual representations are displayed in the book."
+		]
+	},
 	"link": "",
-	"date": "Summer 2017 & 2018",
-	"tags": []
+	"date": "2018",
+	"tags": [
+		"Scientific communication",
+		"Vulgarization",
+		"Digital models",
+		"Spatiotemporal models",
+		"Disease progression"
+	]
 }]
