@@ -11,7 +11,7 @@ permalink: /research/
     <span class="list-group sticky-top sticky-offset">
         <a href="#publications" class="nav-link side-link js-scroll-trigger">➤   Publications</a>
         <a href="#teaching" class="nav-link side-link js-scroll-trigger">➤   Teaching</a>
-        <a href="#map" class="nav-link side-link js-scroll-trigger">➤   Map</a>
+        <a href="#map" class="nav-link side-link js-scroll-trigger">➤   Talks</a>
 
         <hr style="width:60%; background:#02456F; margin-top: 0px; margin-bottom:0px;">
         {% include sticky_side.html %}
@@ -33,6 +33,7 @@ permalink: /research/
         <hr style="width:40%; background:#02456F;">
         </div>
       </div>
+
       <!--
       <div class="row" style="margin-top:30px;">
         <div class="col-md-8 offset-md-1">
@@ -57,27 +58,34 @@ permalink: /research/
     <div class="row">
       <div class="col-md-10">
         <div class="about-text">
-          I explore the dynamics of neurodegenerative diseases to learn statistical models that characterize average and individual progressions of the disease.
+          As part of the <a href="http://www.aramislab.fr/">Aramis Lab</a>, located at the <a href="https://icm-institute.org/fr/">Brain & Spine Institute</a> at the Pitié Salpétrière, in Paris, my PhD thesis aims at exploring new ways to understand the brain evolution, in particular the dynamics of neurodegenerative diseases, thanks to Machine Learning tools.
         </div>
 
         <br><br>
 
         <div class="about-text">
-          As part of the Aramis Lab, located at the Brain and Spine Institute, at the Pitié Salpétrière Hospital, in Paris, I develop new tools to analyze the progression of neurodegenerative diseases, especially Alzheimer's Disease.
-          I contribute to explore new ways to understand the brain evolution thanks to Machine Learning tools.
-        </div>
-
-        <br><br>
-
-        <div class="about-text">
-          The main goal we are trying to reach are multiples
+          The goals of my research are three-fold:
           <ul>
-            <li>Get a better understanding of the disease progression for the doctors</li>
-            <li>Not only to be able to predict individual futur stage but also to better understand one's particular trajectory</li>
-            <li>Give tools to clinical trials in order to measure the impact of a drug versus what should have had happend that we try to determine</li>
+            <li>Get a better understanding of the spatio-temporal patterns of brain alterations, especially by developping numerical models of the disease progression, based on longitudinal data,</li>
+            <li>Characterize individual patterns of progression by analyzing the impact of cofactors (gender, genes, socio-demographical information), and, by predicting individual diagnosis and disease stage, up to 5 years in advance,</li>
+            <li>Simulate virtual cohorts of patients that reproduce the characteristics of real longitudinal cohorts, to, first, overpass anonymization requirements, and, in a second time, enhance classic Machine Learning learners</li>
           </ul>
-          Add a few words about Leasp(y) and Digital Brain - to be released soon.
         </div>
+
+        <br><br>
+
+        <div class="about-text">
+          To this end, I have proposed multiple methological enhancements to existing methods (see <a href="#publications">Publications</a>). Most of them rely on a variety of tools and software I have developped :
+          <ul>
+            <li><b>Leasp:</b> Estimation of the group-average and individual spatio-temporal trajectories. Well suited for the estimation of spatially distributed data. C++. <a href="https://gitlab.icm-institute.org/aramislab/leasp">Website</a>.</li>
+            <li><b>Leaspy:</b> Python version of Leasp, designed for vector-like observations (biomarkers, cognitive scores, image extracted features, ...). It includes method to simulate virtual patients. Python. New release soon.</li>
+            <li><b>Digital Brain:</b> Web application to vizualise the group-average and invidiaul evolution of the cortical thickness, the PET-FDG, the hippocampus mesh and the cognitive scores, during the course of Alzheimer's Disease. <a href="http://digital-brain.org/">Digital-Brain</a></li>
+            <li><b>Longitudinal Prediction:</b> Deep learning based methods to predict a selected variable with the ability to add virtual patients, in a longitudinal setting. Python. New release soon.</li>
+          </ul>
+        </div>
+
+
+
       </div>
 
 
@@ -96,7 +104,7 @@ permalink: /research/
 
         <div class="col-md-2">
           <div class="material-project publi-modal" href="#{{pub.id}}" data-toggle="modal">
-            <img class="img-fluid" src="{{site.baseurl}}/{{pub.img}}">
+            <img class="img-fluid" src="{{site.baseurl}}/{{pub.img}}" style="cursor:pointer;">
           </div>
 
         </div>
@@ -114,12 +122,22 @@ permalink: /research/
       <div class="portfolio-modal modal fade" id="{{pub.id}}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="row">
-              <div class="col-md-10 offset-md-1 text-center">
-                <h2 style="font-size:36px;">{{pub.title}}</h2>
-                <h3 class="page-subtitle text-muted">Abstract</h3>
-                <hr style="width:40%; background:#02456F;">
-                {{pub.abstract}}
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl">
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 offset-md-1">
+                  <h2 style="font-size:36px;">{{pub.title}}</h2>
+                  <h3 class="page-subtitle text-muted">Abstract</h3>
+                  <hr style="width:40%; background:#02456F;">
+                  <div style="text-align:justify;">
+                    {{pub.abstract}}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

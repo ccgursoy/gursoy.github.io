@@ -1,7 +1,7 @@
 {
   "description" : [
-    "I'm a PhD Student in Machine Learning / Applied Maths, under the supervision of Stanley Durrleman and Stéphanie Allassonnière.
-    I'm part of the Center of Applied Maths of Ecole Polytechnique - <a href='https://portail.polytechnique.edu/cmap/fr'>CMAP</a> - and of the <a href='http://www.aramislab.fr/'>Aramis Lab</a> at the Brain and Spine Institute - <a href='https://icm-institute.org/fr/'>ICM</a> - at the Pitié Salpétrière hospital in Paris. My thesis aims at developing Machine Learning tools to investigate neurodegenerative processes and dynamics",
+    "I'm a PhD Student in Machine Learning, under the supervision of Stanley Durrleman and Stéphanie Allassonnière.
+    I'm part of the Center of Applied Maths of Ecole Polytechnique - <a href='https://portail.polytechnique.edu/cmap/fr'>CMAP</a> - and of the <a href='http://www.aramislab.fr/'>Aramis Lab</a> at the Brain and Spine Institute - <a href='https://icm-institute.org/fr/'>ICM</a> - at the Pitié Salpétrière hospital in Paris. My thesis aims at developing Machine Learning tools to investigate neurodegenerative processes and dynamics.",
     "My goal is to use my mathematical and coding skills to create impact where it matters.
     Beyond medical application, I love developing tools or sharing my knowledge in applications with motivating & positive impacts : a chatbot for a Social-and-Solidarity company, a web-app to choose and analyze the political parties at the French election, a cashless app for a music festival, teaching at a Data Science Summer School, ...",
     "Learning and keeping an open mind to innovative ideas, framework, tools is key.
@@ -16,7 +16,7 @@
     {
       "title": "Coding",
       "img": "code",
-      "tags": ["C++", "Python", "Matlab", "Pytorch", "Linux Environnements", "HTML/CSS", "JavaScript", "NodeJS", "Bootstrap", "Flask", "scikit-learn", "Distributed computing"]
+      "tags": ["C++", "Python", "Matlab", "Pytorch", "React-Native", "Linux Environnements", "HTML/CSS", "JavaScript", "NodeJS", "Bootstrap", "scikit-learn", "Distributed computing"]
     },
     {
       "title": "Language",

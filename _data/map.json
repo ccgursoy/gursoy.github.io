@@ -95,8 +95,7 @@
           "Rotterdam Study": "https://en.wikipedia.org/wiki/Rotterdam_Study"
         }
       }
-    }
-    ,
+    },
     {
       "type":"Feature",
       "geometry": {
@@ -113,6 +112,78 @@
         "links": {
           "SIAM Imaging Science 2018": "https://www.siam-is18.dm.unibo.it/",
           "Symposium": "https://www.siam-is18.dm.unibo.it/minisymposia/86"
+        }
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.341365, 48.84421]
+      },
+      "properties": {
+        "title": "AMIES - Medical Imaging & Maths",
+        "location": "Institut Henri Poincaré, Paris",
+        "date": "March 2019",
+        "description": [
+          "Oral Presentation : 'Numerical models of disease progression'."
+        ],
+        "links": {
+          "Conference website": "https://sites.google.com/view/amiesimageriemedicale/home"
+        }
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.2294328, 45.4777824]
+      },
+      "properties": {
+        "title": "EuroPOND workshop",
+        "location": "Politecnico di Milano, Milan, Italy",
+        "date": "February 2019",
+        "description": [
+          "Presentation of the work-package led by Aramis & Inserm within the EuroPOND consortium"
+        ],
+        "links": {
+          "EuroPOND website": "http://europond.eu/"
+        }
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.1460703, 46.222172]
+      },
+      "properties": {
+        "title": "EuroPOND workshop",
+        "location": "Campus Biotech, Geneva, Switzerland",
+        "date": "February 2018",
+        "description": [
+          "Presentation of the work-package led by Aramis & Inserm within the EuroPOND consortium"
+        ],
+        "links": {
+          "EuroPOND website": "http://europond.eu/"
+        }
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.1247017, 51.522576]
+      },
+      "properties": {
+        "title": "EuroPOND workshop",
+        "location": "Institute of Neurology, UCL, London",
+        "date": "February 2017",
+        "description": [
+          "Presentation of manifold-valued model for network at the EuroPOND consortium"
+        ],
+        "links": {
+          "EuroPOND website": "http://europond.eu/"
         }
       }
     }

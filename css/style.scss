@@ -403,13 +403,14 @@ h2 {
 
 .project:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .project {
   height:180px;
   margin-bottom: 20px;
   color: white;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .project-title {
