@@ -126,7 +126,24 @@ h2 {
 .main-nav-link{
   font-size: 20px;
   padding: 16px 20px !important;
-  color: #fff;
+  color: #fff !important;
+
+  /* Set up the hover */
+  /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+  background-image: linear-gradient(white, white);
+  background-size: 0 3px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+}
+
+.main-nav-link.active {
+    background-size: 80% 3px, auto !important;
+}
+
+
+.main-nav-link:hover {
+  background-size: 80% 3px, auto;
 }
 
 
