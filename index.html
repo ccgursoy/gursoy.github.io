@@ -10,7 +10,7 @@ title: Home
 <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-3">
     <span class="list-group sticky-top sticky-offset">
       <div>
-        <img class="profile" src="img/profil.jpg">
+        <img class="profile" src="img/profil.jpg" alt="profile picture">
       </div>
       <a href="#about" class="nav-link side-link js-scroll-trigger">➤ About me</a>
       <a href="#interests" class="nav-link side-link js-scroll-trigger">➤ Skills & Interests</a>
@@ -159,7 +159,7 @@ title: Home
       {% for edu in site.data.education %}
         <div class="row education-row">
           <div class="col-md-2 education-img">
-            <img class="img-fluid" src={{edu.img}} alt="">
+            <img class="img-fluid" src={{edu.img}} alt="{{edu.title}}">
           </div>
           <div class="col-md-10">
             <div class="about-text">
