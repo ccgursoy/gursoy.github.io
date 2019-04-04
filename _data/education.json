@@ -1,9 +1,16 @@
 [
   {
-    "title": "Master Data Science - Ecole Polytechnique",
+    "title": "PhD Student - ICM x CMAP x EDMH",
+    "period": "2016 onwards",
+    "description": "Statistical learning of spatio-temporal trajectories based on longitudinal data - application to neurogedenerative diseases. <a href='https://icm-institute.org/'>ICM</a> - <a href='https://portail.polytechnique.edu/cmap/fr'>CMAP</a> - <a href='https://www.fondation-hadamard.fr/fr/edmh/presentation'>EDMH</a>" ,
+    "img": "img/education/icm.jpg",
+    "tags": ["Advanced Machine Learning", "Convex optimization", "Deep Learning", "Statistical Learning", "Compressed Sensing", "Hackathons"]
+  },
+  {
+    "title": "Master Data Science - Paris Saclay University",
     "period": "2015 - 2016",
     "description": "Theoretical courses in maths, various machine-learning projects and hackathons-like sessions. Ecole Polytechnique, Université Paris-Saclay, Télécom Paris, ENSAE. <a href='https://datascience-x-master-paris-saclay.fr/'>Website.</a>",
-    "img": "img/education/m2.png",
+    "img": "img/education/saclay.png",
     "tags": ["Advanced Machine Learning", "Convex optimization", "Deep Learning", "Statistical Learning", "Compressed Sensing", "Hackathons"]
   },
   {
