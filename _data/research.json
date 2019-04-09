@@ -1,6 +1,28 @@
 {
   "publications": [
     {
+      "id": "simulation",
+      "title": "Simulation of Virtual Cohorts increases Predictive Accuracy of Cognitive Decline in MCI Subjects",
+      "img": "img/research/simulation.png",
+      "authors": "Koval I., Allassonnière S., Durrleman S.",
+      "year": 2019,
+      "in": "Under revision",
+      "pdf": "pdf/simulation.pdf",
+      "tags": ["Data Augmentation", "Sequence Data", "Virtual Cohort", "Long-Short Term Memory Neural Networks", "Alzheimer's Disease", "Disease stage prediction"],
+      "abstract": "The ability to predict the progression of biomarkers, notablyin NDD, is limited by the size of the longitudinal data sets, in terms of number of patients, number of visits per patients and total follow-uptime. To this end, we introduce a data augmentation technique that isable to reproduce the variability seen in a longitudinal training dataset and simulate continuous biomarkers trajectories for any number of virtual patients. Thanks to this simulation framework, we propose  to transform the training set into a simulated data set with more patients, more time-points per patient and longer follow-up duration. We illustrate this approach on the prediction of the MMSE of MCI subjects of the ADNI data set. We show that it allows to reach predictions with errors comparable to the noise in the data, estimated in test/retest studies,achieving a improvement of 37% of the mean absolute error compared to the same non-augmented model."
+    },
+    {
+      "id": "geometry_learning",
+      "title": "Riemannian Geometry Learning for Disease Progression Modelling",
+      "img": "img/research/geometry_learning.png",
+      "authors": "Louis M., Couronné R., Koval I., Charlier B., Durrleman S.",
+      "year": 2019,
+      "in": "IPMI",
+      "pdf": "pdf/geometry_learning",
+      "tags": ["Riemannian geometry", "Longitudinal progression", "Medical Imaging", "Alzheimer's Disease", "Recurrent Neural Networks"],
+      "abstract": "The analysis of longitudinal trajectories is a longstanding problem in medical imaging which is often tackled in the context of Riemannian geometry: the set of observations is assumed to lie on an a priori known Riemannian manifold. When dealing with high-dimensional or complex data, it is in general not possible to design a Riemannian geometry of relevance. In this paper, we perform Riemannian manifold learning in association with the statistical task of longitudinal trajectory analysis. After inference, we obtain both a submanifold of observations and a Riemannian metric so that the observed progressions are geodesics. This is achieved using a deep generative network, which maps trajectories in a low-dimensional Euclidean space to the observation space."
+    },
+    {
       "id": "digital",
       "title": "Simulating Alzheimer’s Disease Progression with Personalised Digital Brain Models",
       "img": "img/research/preprint_cut.png",
@@ -8,7 +30,7 @@
       "year": 2018,
       "in": "Under revision",
       "pdf": "pdf/preprint.pdf",
-      "tags": ["Digital brain", "Virtual cohort", "Alzheimer's Disease", "Personalized progression"],
+      "tags": ["Digital brain model", "Virtual cohort", "Alzheimer's Disease", "Personalized progression"],
       "abstract": "Simulating the effects of Alzheimer’s disease on the brain is essential to better understand, predict and control how the disease progresses in patients. Our limited understanding of how disease mechanisms lead to changes seen in brain images and clinical examination hampers the development of biophysical simulations. We propose here a statistical learning approach, where the repeated observations of several patients over time are used to synthesise personalized digital brain models. They provide spatiotemporal views of structural and functional brain alterations and associated scenarios of cognitive decline at the individual level. We show that the personalization of the models to unseen subjects reconstructs their progression with errors of the same order as the uncertainty of the measurements. Simulation of synthetic patients generalise the distributions of the data in the training cohort. The analysis of factors modulating disease progression evidences a prominent sexual dimorphism and probable compensatory mechanisms in APEO-ε4 carriers. This first simulator of its kind offers an unparalleled way to explore the heterogeneity of the disease’s manifestation on the brain, and to predict its progression in each patient."
     },
     {
@@ -29,7 +51,7 @@
       "year": 2018,
       "in": "Frontiers in Neurology",
       "pdf": "pdf/frontiers.pdf",
-      "tags": [],
+      "tags": ["Disease progression", "Brain networks", "Spatiotemporal propagation patterns", "Alzheimer's Disease", "Individual variability"],
       "abstract": "Repeated failures in clinical trials for Alzheimer’s disease (AD) have raised a strong interest for the prodromal phase of the disease. A better understanding of the brain alterations during this early phase is crucial to diagnose patients sooner, to estimate an accurate disease stage, and to give a reliable prognosis. According to recent evidence, structural alterations in the brain are likely to be sensitive markers of the disease progression. Neuronal loss translates in specific spatiotemporal patterns of cortical atrophy, starting in the enthorinal cortex and spreading over other cortical regions according to specific propagation pathways. We developed a digital model of the cortical atrophy in the left hemisphere from prodromal to diseased phases, which is built on the temporal alignment and combination of several short-term observation data to reconstruct the long-term history of the disease. The model not only provides a description of the spatiotemporal patterns of cortical atrophy at the group level but also shows the variability of these patterns at the individual level in terms of difference in propagation pathways, speed of propagation, and age at propagation onset. Longitudinal MRI datasets of patients with mild cognitive impairments who converted to AD are used to reconstruct the cortical atrophy propagation across all disease stages. Each observation is considered as a signal spatially distributed on a network, such as the cortical mesh, each cortex location being associated to a node. We consider how the temporal profile of the signal varies across the network nodes. We introduce a statistical mixed-effect model to describe the evolution of the cortex alterations. To ensure a spatiotemporal smooth propagation of the alterations, we introduce a constrain on the propagation signal in the model such that neighboring nodes have similar profiles of the signal changes. Our generative model enables the reconstruction of personalized patterns of the neurodegenerative spread, providing a way to estimate disease progression stages and predict the age at which the disease will be diagnosed. The model shows that, for instance, APOE carriers have a significantly higher pace of cortical atrophy but not earlier atrophy onset."
     },
     {

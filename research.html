@@ -96,6 +96,7 @@ permalink: /research/
     <div class="row" id="publications" style="margin-top:70px;">
       <div class="col-md-10">
         <h2 class="title">Publications</h2>
+        <p>Click on the image (or title for phone-users) to read the abstract</p>
       </div>
     </div>
 
@@ -103,7 +104,7 @@ permalink: /research/
       <div class="row publi-row">
 
         <div class="col-md-2">
-          <div class="material-project publi-modal" href="#{{pub.id}}" data-toggle="modal">
+          <div class="material-project publi-modal img-modal" href="#{{pub.id}}" data-toggle="modal">
             <img class="img-fluid" src="{{site.baseurl}}/{{pub.img}}" style="cursor:pointer;" alt="{{pub.title}}">
           </div>
 
@@ -111,7 +112,9 @@ permalink: /research/
 
         <div class="col-md-8">
           <div class="about-text">
-            <span class="publi-title">{{pub.title}}</span>
+            <div class="material-project publi-modal" href="#{{pub.id}}" data-toggle="modal">
+              <span class="publi-title">{{pub.title}}</span>
+            </div>
             <div class="publi-info">In <i>{{pub.in}}</i>. {{pub.year}}. <a href="{{site.baseurl}}/{{pub.pdf}}">PDF</a></div>
             <div class="publi-authors">{{pub.authors}}</div>
           </div>
@@ -137,6 +140,13 @@ permalink: /research/
                   <div style="text-align:justify;">
                     {{pub.abstract}}
                   </div>
+                  <div style="margin-top:20px">
+                  {% for tag in pub.tags %}
+                    <span class="interests-tag">{{tag}}</span>
+                  {% endfor %}
+                  </div>
+
+                  <img class="img-fluid" src="{{site.baseurl}}/{{pub.img}}" alt="{{pub.title}}" style="max-height:200px; max-width:100%; margin-top:50px"></img>
                 </div>
               </div>
             </div>
